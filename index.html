@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LaTape</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    
+
+    <style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body,html {height: 100%}
+.fullscreen-bg {position: fixed; top: 0; right: 0;top: 0;left: 0;overflow: hidden;z-index: -100;}
+.bgimg {background-image: url('./img/burger5.png');
+height: 100vh;background-position: center center; background-size: cover;
+
+
+}
+.fab {padding: 10px;font-size: 30px;width: 50px;text-align: center;text-decoration: none;margin: 5px 2px;border-radius: 50%;}
+.fab:hover {opacity: 0.9;}
+.fa-facebook {background: #3B5998;color: white;}
+.fa-instagram {background: purple;color: white;}
+h4,h5{
+    margin: 0;padding: 5px; color: white;
+    display: inline-block; font-size: 0.81rem;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff,
+    0 0 30px #e60073, 0 0 40px #e60073,
+    0 0 50px #e60073, 0 0 60px #e60073,
+    0 0 70px #e60073;
+
+}
+h5{font-size: 0.81rem;}
+h4:nth-child(0n + 0), h5:nth-child(5n + 0){
+    animation: animateGlithcy 0s 0s linear
+    alternate-reverse infinite;
+}
+h4:nth-child(0n + 1), h5:nth-child(5n + 1){
+    animation: animateGlithcy 0.5s 0.2s
+    linear alternate-reverse infinite;
+}
+/**/
+h4:nth-child(0n + 2), h5:nth-child(5n + 1){
+    animation: animateGlithcy 1s 0.4s
+    linear alternate-reverse infinite;
+}
+h4:nth-child(0n + 3), h5:nth-child(5n + 3){
+    animation: animateGlithcy 1.5s 0.6s
+    linear alternate-reverse infinite;
+}
+h4:nth-child(0n + 4), h5:nth-child(5n + 4){
+    animation: animateGlithcy 2s 0.8s
+    linear alternate-reverse infinite;
+}
+h4:nth-child(0n + 5), h5:nth-child(5n + 5){
+    animation: animateGlithcy 1s 2.5s
+    linear alternate-reverse infinite;
+}
+@keyframes animateGlithcy {
+    0%{
+        opacity: 0.1; background-position: 0 0;
+        filter: hue-rotate(0deg);}
+        10%{background-position: 5px 0;}
+        20%{background-position: -5px 0;}
+        30%{background-position: 15px 0;}
+        40%{background-position: -5px 0;}
+        50%{background-position: -25px 0;}
+        60%{background-position: -50px 0;}
+        70%{background-position: 0 -20px;}
+        80%{background-position: -60px -20px;}
+        81%{background-position: 0 0;}
+        100%{opacity: 1; background-position: 0 0;
+        filter: hue-rotate(360deg);
+        }
+        
+
+}
+.bt{
+    border-radius: 50%;
+    border: none;
+}
+
+    </style>
+
+</head>
+
+<body>
+
+    <!--div class="bgimg w3-display-container bgimg">
+<img src="./img/burger5.png" alt="imagen de fondo">
+</div-->
+    <div class="bgimg w3-display-container w3-text-white">
+        
+
+
+    </div>
+    <div class="w3-display-topleft w3-container w3-xlarge">
+        <i><button onclick="document.getElementById('burger').style.display='block'"
+                class="w3-button w3-black bt">Burger</button></i>
+
+        <!--Bocatas-->
+
+        <p><button onclick="document.getElementById('bocata').style.display='block'" class="w3-button w3-black bt">Bocatas
+            </button></p>
+
+        <!--Picoteo-->
+
+        <p><button onclick="document.getElementById('picoteo').style.display='block'"
+                class="w3-button w3-black bt">Picoteo</button></p>
+
+        <!--Vigguie-->
+        <p><button onclick="document.getElementById('veggie').style.display='block'"
+                class="w3-button w3-black bt">Veggie</button></p>
+
+        <!--beer-->
+        <p><button onclick="document.getElementById('beer').style.display='block'"
+                class="w3-button w3-black bt">Beer</button></p>
+        <br>
+    </div>
+    <div class="w3-display-bottomleft w3-container ">
+        
+        <!--aqui van los horarios-->
+    </div>
+    
+    <div class="w3-display-topright w3-container hello-world">
+
+        <h4>#LATAPE</h4>
+            <br>
+        <h5>B</h5>
+        <h5>U</h5>
+        <h5>R</h5>
+        <h5>G</h5>
+        <h5>E</h5>
+        <h5>R</h5>
+    <br>
+    <h5>     &</h5>
+    <br>
+    <h5>B</h5>
+    <h5>E</h5>
+    <h5>E</h5>
+    <h5>R</h5>
+    <h5>HOUSE.</h5>
+        
+    </div>
+
+    <div class="w3-display-bottomleft w3-container hello-world">
+
+        <h4>S</h4>
+        <h4>i</h4>
+        <h4>g</h4>
+        <h4>u</h4>
+        <h5>e</h5>
+        <h5>n</h5>
+        <h5>o</h5>
+        <h5>s</h5>
+        
+    </div>
+    <div class="w3-display-bottomright w3-container">
+
+
+        
+
+        <a href="https://www.instagram.com/latapetorrelavega/" target="blank" class="fab fa-instagram"><i></i></a>
+        <a href="https://www.facebook.com/latapetorrelavega/" target="blank" class="fab fa-facebook"><i></i></a>
+    </div>
+    
+    
+    </div>
+
+
+    <!-- Menu Modal -->
+    <div id="burger" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+            <div class="w3-container w3-black w3-display-container">
+                <span onclick="document.getElementById('burger').style.display='none'"
+                    class="w3-button w3-display-topright w3-large">x</span>
+                <!--******BURGERS*****-->
+                <h3>BURGER SOLA</h3>
+            </div>
+            <div class="w3-container">
+                <h6>Carne de Ternera o Pollo......... <b>3.90&euro;</b></h6>
+            </div>
+            <div class="w3-container w3-black">
+                <h3>BURGER COMPLETA</h3>
+            </div>
+            <div class="w3-container">
+                <h6>Lechuga, tomate, cebolla y queso......<b>4.50&euro;</b></h6>
+
+            </div>
+            <div class="w3-container w3-black">
+                <h3>BURGER ESPECIAL</h3>
+            </div>
+            <div class="w3-container">
+                <h6>Lechuga, tomate, cebolla,</h6>
+                <h6>queso, jamon york,</h6>
+                <h6>huevo y bacon....... <b>5.30&euro;</b></h6>
+            </div>
+
+
+            <div class="w3-container w3-black">
+                <h3>BURGER LA TAPERIA</h3>
+            </div>
+            <div class="w3-container">
+                <h6>Lechuga, tomate, cebolla caramelizada,</h6>
+                <h6>pimientos, queso, jamon york,</h6>
+                <h6>huevo y bacon...............<b>5.80&euro;</b></h6>
+            </div>
+
+
+            <div class="w3-container w3-black">
+                <h3>BURGER DOBLE CHEDDAR</h3>
+            </div>
+            <div class="w3-container">
+                <h6>Doble de cheddar y bacon crujiente..... <b>6.00&euro;</b></h6>
+            </div>
+
+
+            <div class="w3-container w3-black">
+                <h3>BURGER MEDITERRANEA</h3>
+            </div>
+            <div class="w3-container">
+                <h6>Tomate, queso de cabra,</h6>
+                <h6>jamon serrano y salmorejo..... <b>6.00&euro;</b></h6>
+            </div>
+
+
+            <div class="w3-container w3-black">
+                <h3>BURGER FILADELFIA</h3>
+            </div>
+            <div class="w3-container">
+                <h6>Crema de queso, bacon crujiente,</h6>
+                <h6>cebolla caramelizada con vinagre de modena y mermelada de pimientos........... <b>6.00&euro;</b>
+                </h6>
+
+            </div>
+
+
+            <div class="w3-container w3-black">
+                <h3>BURGER PEKIN</h3>
+            </div>
+            <div class="w3-container">
+                <h6>Carne de ternera, lechuga,</h6>
+                <h6>verduras al wok, salsa de ostras y salsa agridulce......<b>7.00&euro;</b> </h6>
+            </div>
+
+
+            <div class="w3-container w3-black">
+                <h3>BURGER TIJUANA</h3>
+            </div>
+            <div class="w3-container">
+                <h6>Carne de pollo, guacamole, lechuga</h6>
+                <h6>tomate, cebolla roja, jalapeños, cheddary mayonesa.......<b>7.00&euro;</b></h6>
+
+            </div>
+
+
+            <div class="w3-container w3-black">
+                <h3>BURGER CALCUTA</h3>
+            </div>
+            <div class="w3-container">
+                <h6>Carne de pollo, calabacin y berenjena a la plancha,</h6>
+                <h6>pimientos, salsa de yogur y salsa tikka masala...... <b>7.00&euro;</b></h6>
+
+            </div>
+
+            <div class="w3-container w3-black">
+                <h3>BURGER ESTAMBUL</h3>
+            </div>
+            <div class="w3-container">
+                <h6>Carne de cordero(180gr), lechuga, tomate,</h6>
+                <h6>cebolla roja, queso de cabra, salsa, kebab y perejil....<b>7.00&euro;</b></h6>
+            </div>
+
+
+            <div class="w3-container w3-black">
+                <h3>BURGER MANHATAN</h3>
+            </div>
+            <div class="w3-container">
+                <h6>Carne angus (180gr), tomate a la plancha, </h6>
+                <h6>cebolla roja, pepinillos, bacon, cheddar y salsa barbacoa..... <b>9.00&euro;</b></h6>
+
+            </div>
+
+
+            <div class="w3-container w3-black">
+                <h3>BURGER JABUGO</h3>
+            </div>
+            <div class="w3-container">
+                <h6>Carne de cerdo iberico (200gr), lechuga gourmet, tomate, cebolla roja, queso semicurado,</h6>
+                <h6>jamon serrano y reduccion de pedro ximenez...... <b>10.50&euro;</b> </h6>
+
+            </div>
+
+
+            <div class="w3-container w3-black">
+                <h3>BURGER KOBE</h3>
+            </div>
+            <div class="w3-container">
+                <h6>Carne Wagyu (200gr), lechuga gourmet, queso tierno, cebolla caramelizada, piquillo,</h6>
+                <h6>mayonesa de siracha y salsa hoisin...... <b>12.00&euro;</b></h6>
+
+            </div>
+
+            <div class="w3-container w3-grey">
+                <h3>IMPORTANTE</h3>
+            </div>
+            <div class="w3-container">
+                <h6 class="w3-text-red">Todas las Hamburguesas llevan complemento de patatas</h6>
+                <h6 class="w3-text-yellow">Cada ingrediente o salsa extra...... <b>0,60&euro;</b> </h6>
+
+            </div>
+        </div>
+    </div>
+
+    <!--*******bocatas*******-->
+
+    <div id="bocata" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+            <div class="w3-container w3-black w3-display-container">
+                <span onclick="document.getElementById('bocata').style.display='none'"
+                    class="w3-button w3-display-topright w3-large">x</span>
+                <h3>PEPITO POLLO</h3>
+            </div>
+            <div class="w3-container">
+                <h6>Escalope de pollo, lechuga, tomate y mayonesa....... <b>6.00&euro;</b></h6>
+
+            </div>
+            <div class="w3-container w3-black">
+                <h3>PEPITO DE TERNERA</h3>
+            </div>
+            <div class="w3-container">
+                <h6>Escalope de ternera y pimientos...... <b>6.00&euro;</b></h6>
+
+            </div>
+            <div class="w3-container w3-black">
+                <h3>PEPITO DE LOMO</h3>
+            </div>
+            <div class="w3-container">
+                <h6>Lomo a la plancha, queso y pimientos.......<b>6.00&euro;</b></h6>
+
+            </div>
+
+            <div class="w3-container w3-black">
+                <h3>PERRITO CALIENTE</h3>
+            </div>
+            <div class="w3-container">
+                <h6>.......................<b>2.90&euro;</b></h6>
+
+            </div>
+
+            <div class="w3-container w3-black">
+                <h3>PERRITO LA TAPE</h3>
+            </div>
+            <div class="w3-container">
+                <h6>Salchicha frankfurk, bacon, cheddar y jalapeños .......<b>4.10&euro;</b></h6>
+
+            </div>
+        </div>
+    </div>
+
+    <!--picoteo-->
+
+    <div id="picoteo" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+            <div class="w3-container w3-black w3-display-container">
+                <span onclick="document.getElementById('picoteo').style.display='none'"
+                    class="w3-button w3-display-topright w3-large">x</span>
+                <h3>PATATAS 3 SALSAS</h3>
+            </div>
+            <div class="w3-container">
+                <h6>Patatas fritas con salsa brava, barbacoa y ali oli ......... <b>4.00&euro;</b></h6>
+
+            </div>
+            <div class="w3-container w3-black">
+                <h3>PATATAS LA TAPE</h3>
+            </div>
+            <div class="w3-container">
+                <h6>Patatas fritas con cheddar, ali oli y bacon .......... <b>5.00&euro;</b></h6>
+
+            </div>
+            <div class="w3-container w3-black">
+                <h3>RABAS</h3>
+            </div>
+            <div class="w3-container">
+                <h6>......... <b>7.00&euro;</b></h6>
+
+            </div>
+
+            <div class="w3-container w3-black">
+                <h3>CROQUETAS</h3>
+            </div>
+            <div class="w3-container">
+                <h6>Jamon, boletus o rulo de cabra con cebolla caramelizada ......... <b>7.50&euro;</b></h6>
+
+            </div>
+
+            <div class="w3-container w3-black">
+                <h3>ALITAS</h3>
+            </div>
+            <div class="w3-container">
+                <h6>Alas de pollo fritas con salsa brava, barbacoa y ali oli ........ <b>6.00&euro;</b></h6>
+
+            </div>
+
+            <div class="w3-container w3-black">
+                <h3>SARTEN CARBONARA</h3>
+            </div>
+            <div class="w3-container">
+                <h6>Patatas fritas, salsa carbonara con champiñones, jamon serrano y huevo ........ <b>7.00&euro;</b>
+                </h6>
+
+            </div>
+
+            <div class="w3-container w3-black">
+                <h3>SARTEN DE GULA Y GAMBAS</h3>
+            </div>
+            <div class="w3-container">
+                <h6> Patatas fritas, salsa cremosa con gulas, gambas y huevos ......... <b>7.00&euro;</b></h6>
+
+            </div>
+
+            <div class="w3-container w3-black">
+                <h3>ENSALADA CESAR</h3>
+            </div>
+            <div class="w3-container">
+                <h6>Ensalada gourmet, tomate, cebolla frita, picatostes, pollo y salsa cesar ......... <b>7.00&euro;</b>
+                </h6>
+
+            </div>
+
+            <div class="w3-container w3-black">
+                <h3>ENSALADA DE RULO DE CABRA</h3>
+            </div>
+            <div class="w3-container">
+                <h>Ensalada gourmet, tomate cebolla caramelizada, rulo de cabra y nueces ......... <b>7.00&euro;</b>
+                </h6>
+
+            </div>
+
+            <div class="w3-container w3-grey">
+                <h3>IMPORTANTE</h3>
+            </div>
+            <div class="w3-container w3-text-red">
+                <h6>Racion de pan ......... <b>0.60&euro;</b></h6>
+
+            </div>
+        </div>
+    </div>
+
+    <!--veggie-->
+
+    <div id="veggie" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+            <div class="w3-container w3-black w3-display-container">
+                <span onclick="document.getElementById('veggie').style.display='none'"
+                    class="w3-button w3-display-topright w3-large">x</span>
+                <h3>BURGER BEYOND</h3>
+            </div>
+            <div class="w3-container">
+                <h6>Beyond, lechuga, tomate y cebolla caramelizada ..........<b>7.50&euro;</b></h6>
+
+            </div>
+            <div class="w3-container w3-black">
+                <h3>BURGER FIVE BEANS</h3>
+            </div>
+            <div class="w3-container">
+                <h6>Five beans, lechuga, tomate y guacamole ............. <b>6.00&euro;</b></h6>
+
+            </div>
+            <div class="w3-container w3-black">
+                <h3>VERDURAS EN TEMPURA</h3>
+            </div>
+            <div class="w3-container">
+                <h6>Cebolla, pimiento, calabacin, berenjena y zanahoria ........... <b>6.50&euro;</b></h6>
+
+            </div>
+
+            <div class="w3-container w3-black">
+                <h3>FALAFEL</h3>
+            </div>
+            <div class="w3-container">
+                <h6>Falafel con salsa a elegir entre: chile piña, agridulce de ciruela o yogur ...........
+                    <b>9.00&euro;</b></h6>
+
+            </div>
+        </div>
+    </div>
+
+    <!--beer-->
+
+    <div id="beer" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+            <div class="w3-container w3-black w3-display-container">
+                <span onclick="document.getElementById('beer').style.display='none'"
+                    class="w3-button w3-display-topright w3-large">x</span>
+                <h3>AMSTEL</h3>
+            </div>
+            <div class="w3-container">
+                <h6>EJEMPL...... <b>$2.50</b></h6>
+
+            </div>
+            <div class="w3-container w3-black">
+                <h3>DOUGALLS</h3>
+            </div>
+            <div class="w3-container">
+                <h6>EJEM....... <b>$8.50</b></h6>
+            </div>
+            <div class="w3-container w3-black">
+                <h3>RED NECK</h3>
+            </div>
+            <div class="w3-container">
+                <h6>EJEM..... <b>$2.50</b></h6>
+
+            </div>
+        </div>
+    </div>
+    <!-- Contact Modal -
+    <div id="contact" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+            <div class="w3-container w3-black">
+                <span onclick="document.getElementById('contact').style.display='none'"
+                    class="w3-button w3-display-topright w3-large">x</span>
+                <h1>Contact</h1>
+            </div>
+            <div class="w3-container">
+                <p>Reserve a table, ask for today's special or just send us a message:</p>
+                <form action="/action_page.php" target="_blank">
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required
+                            name="Name"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people"
+                            required name="People"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time"
+                            required name="date" value="2017-11-16T20:00"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text"
+                            placeholder="Message \ Special requirements" required name="Message"></p>
+                    <p><button class="w3-button" type="submit">SEND MESSAGE</button></p>
+                </form>
+            </div-->
+    </div>
+    </div>
+
+</body>
+
+</html>
